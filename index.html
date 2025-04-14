@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="indexStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfumery - Welcome to our shop</title>
 </head>
-<body>
-    <h1>Perfumery</h1>
 
+<body>
+    <div class="header">
+        <!--Clickable home button-->
+        <div class="homeButtonIcon">
+            <a href="/index.html">
+                <img src="/photos/homeButtonIcon.png" alt="PerfumeryHome">
+            </a>
+        </div>
+        <h1>Perfumery</h1>
+    </div>
+    
     <!--Nav Bar simple-->
-    <ul>
-        <li><a class="active" href="./index.html">Home</a></li>
-        <li><a href="./pages/perfumeMakerPage/maker.html">Perfume Maker</a></li>
-        <li><a href="./pages/missionPage/mission.html">Mission</a></li>
-        <li style="float:right"><a href="./pages/cartPage/cart.html">Cart</a></li>
-    </ul>
+    <div class="topnav">
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="./pages/perfumeMakerPage/maker.html">Perfume Maker</a></li>
+            <li><a href="/pages/missionPage/mission.html">Mission</a></li>
+            <li style="float:right"><a href="/pages/cartPage/cart.html"><img src="/photos/cartIcon.png"></a></li>
+        </ul>
+    </div>
 
     <div id="welcomeText">
         <h1>With over 1000+ scent combinations</h1>
     </div>
 
-    <div class="container" id="bodyImage1">
-        <img src="./photos/perfumeIcon.jpg" alt="perfumeIcon" class="image">
-        <div class="middle">
-            <div class="text">
-                <a href="./pages/perfumeMakerPage/maker.html">Get Creative</a>
+    <div>
+        <!--get creative image and button and img LEFT SIDE-->
+        <div class="container" id="bodyImage1">
+            <img src="./photos/perfumeIcon.jpg" alt="perfumeIcon" class="image">
+            <div class="middle">
+                <div class="text">
+                    <a href="./pages/perfumeMakerPage/maker.html">Get Creative</a>
+                </div>
             </div>
+        </div>
+        <!--More information and button to mission page Right Side-->
+        <div>
+            <h1></h1>
         </div>
     </div>
 
 </body>
+
 </html>

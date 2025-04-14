@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="makerStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Perfume Making Page</h1>
 
-        <!--Nav Bar simple-->
+<body>
+    <div class="header">
+        <!--Clickable home button-->
+        <div class="homeButtonIcon">
+            <a href="/index.html">
+                <img src="/photos/homeButtonIcon.png" alt="PerfumeryHome">
+            </a>
+        </div>
+
+        <h1>Perfumery</h1>
+    </div>
+
+    <!--Nav Bar simple-->
+    <div class="topnav">
         <ul>
             <li><a class="active" href="/index.html">Home</a></li>
             <li><a href="./maker.html">Perfume Maker</a></li>
             <li><a href="/pages/missionPage/mission.html">Mission</a></li>
-            <li style="float:right"><a href="/pages/cartPage/cart.html">Cart</a></li>
+            <li style="float:right"><a href="/pages/cartPage/cart.html"><img src="/photos/cartIcon.png"></a></li>
         </ul>
+    </div>
+
+    <!--Left Side-->
+    <!--Pyramid Diagram-->
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Pyramid</h2>
+                <h5>Description for instructions</h5>
+                <div>
+                    <img class="pyramidImg" src="/photos/fragrancePyramidSamplePic.png">
+                </div>
+            </div>
+        </div>
+
+        <!--Right Side-->
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Top Elements</h2>
+                <div class="fakeImage" style="height: 100px;">Drop Box</div>
+            </div>
+            <div class="card">
+                <h2>Middle Elements</h2>
+                <div class="fakeImage" style="height: 100px;">Drop Box</div>
+            </div>
+            <div class="card">
+                <h2>Base Elements</h2>
+                <div class="fakeImage" style="height: 100px;">Drop Box</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Contact Us: support@perfumery.com</h2>
+        <h2>Follow Our Socials For Special Promos</h2>
+    </div>
+
 </body>
+
 </html>

@@ -1,30 +1,5 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: burlywood;
-
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color:rgb(189, 132, 201);
+* {
+    box-sizing: border-box;
 }
 
 .active {
@@ -38,45 +13,44 @@ li a:hover {
 }
 
 
-    .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%)
-    }
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
 
-    .container:hover .image {
-        opacity: 0.3;
-    }
+.container:hover .image {
+    opacity: 0.3;
+}
 
-    .container:hover .middle {
-        opacity: 1;
-    }
+.container:hover .middle {
+    opacity: 1;
+}
 
-    .text {
-        background-color: rgb(189, 132, 201);
-        color: black;
-        font-size: 16px;
-        padding: 16px 32px;
-    }
+.text {
+    background-color: rgb(189, 132, 201);
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+img {
+    width: 15px;
+}
 
 
 #bodyImage1 {
 
     text-align: center;
-    
-    img {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 5px;
-    width: 400px;
-    max-width: 100%;
-    height:auto;
 
+    #homePageIcon {
+        text-align: center;
     }
+
     /*
     img:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -84,3 +58,97 @@ li a:hover {
         */
 }
 
+#bodyImage1 img {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background: rgb(189, 132, 201);
+    border: 4px solid black;
+    border-radius: 4px;
+}
+
+.header h1 {
+    font-size: 20px;
+}
+
+.homeButtonIcon {
+
+    text-align: center;
+
+    img {
+        border: 3px solid black;
+        border-radius: 4px;
+        padding: 5px;
+        width: 50px;
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: burlywood;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav li a:hover {
+    background-color: rgb(189, 132, 201);
+    border: 2px solid black;
+    border-radius: 1px;
+}
+
+
+/* Make website change based on mobile vs computer screen*/
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
